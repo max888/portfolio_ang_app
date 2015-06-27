@@ -1,4 +1,23 @@
-# angular-seed — the seed for AngularJS apps
+
+#This is my flavour template for the abgular seed project (with LESS etc added)
+
+Node commands:
+
+
+*First instal gulp*
+npm install --global gulp
+npm install --save-dev gulp
+
+*theb =n Connect for live server reloads*
+npm install --save-dev gulp-connect
+
+
+Links Tutes etc:
+https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md
+http://code.tutsplus.com/tutorials/gulp-as-a-development-web-server--cms-20903
+
+
+## angular-seed — the seed for AngularJS apps
 
 This project is an application skeleton for a typical [AngularJS](http://angularjs.org/) web app.
 You can use it to quickly bootstrap your angular webapp projects and dev environment for these
