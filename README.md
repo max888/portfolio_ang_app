@@ -1,16 +1,25 @@
 
-#This is my flavour template for the abgular seed project (with LESS etc added)
+#This is my flavour template for the angular seed project (with LESS etc added);
+
+It is an angular node project that uses Gulp to build and serve the files on node server.
+
+It also has livereload that watches for changes in the less files and auto updates the browser.
 
 Node commands:
 
-
-*First instal gulp*
+*First install gulp*
 npm install --global gulp
 npm install --save-dev gulp
 
-*theb =n Connect for live server reloads*
+*the Connect for live server reloads*
 npm install --save-dev gulp-connect
 
+*and LESS with gulp*
+npm install --save-dev gulp-less
+
+
+Command to run gulp:
+gulp
 
 Links Tutes etc:
 https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md
