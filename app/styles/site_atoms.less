@@ -1,7 +1,5 @@
 // main: ../styles/app.less
 
-
-
 //-----------------------------------------------[Generators]
 .size(@size: 16px, @height: 20px){
 	font-size: @size;
@@ -34,18 +32,35 @@
 .red{ color:@red; }
 .redBG{ background-color:@red; }
 
+@white:#FFFFFF;
+.white{ color:@white; }
+.whiteBG{ background-color:@white; }
+
+@black:#000000;
+.black{ color:@black; }
+.blackBG{ background-color:@black; }
+
+@grey:#a8a8a8;
+.grey{ color:@grey; }
+.greyBG{ background-color:@grey; }
+
+@lightGrey:#D3D3D3;
+.lightGrey{ color:@lightGrey; }
+.lightGreyBG{ background-color:@lightGrey; }
+
+
 
 //-----------------------------------------------[Fonts]
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700italic|Ubuntu+Mono|Comfortaa:700);
+
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans:400,700);
 .hFont{
-	font-family: 'Comfortaa', cursive;
-	.red;
+	font-family: 'Droid Sans', sans-serif;
 }
 .pFont{
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Droid Sans', sans-serif;
 }
 .monoFont{
-	font-family: 'Ubuntu Mono';
+	font-family: 'Droid Sans', sans-serif;
 }
 pre,code,samp,var{
 	.monoFont;
@@ -117,10 +132,11 @@ blockquote{
 //-----------------------------------------------[Inline]
 a{
 	text-decoration:none;
-	.red;
+	color:@grey;
 }
 a:hover{
 	text-decoration:underline;
+	color: @lightGrey;
 }
 a:active{
 

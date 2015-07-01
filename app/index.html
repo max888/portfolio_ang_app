@@ -11,22 +11,47 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
   <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
+  <link href='http://fonts.googleapis.com/css?family=Vollkorn:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="styles/app.css">
   <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 <body>
-  <ul class="menu">
-    <li><a href="#/view1">view1</a></li>
-    <li><a href="#/view2">view2</a></li>
-  </ul>
+  <!--top header inc logo -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-3 col-sm-offset-5 top-nav">
+        <p><a href="#">Video</a></p>
+        <p><a href="#">Blog</a></p>
+      </div>
+    </div>
+  </div>
+  <!--end header inc logo -->
+
+  <div id="wrapper">
+    <div id="sidebar-wrapper">
+      <div>
+        <img src="img/max_creates_logo.png" alt="">
+      </div>
+      <ul class="sidebar-nav">
+        <li><a href="#/home">Home</a></li>
+        <li><a href="#/about">About</a></li>
+        <li><a href="#/services">Services</a></li>
+        <li><a href="#/contact">Contact</a></li>
+      </ul>
+    </div>
+    <div ng-view>
+    </div>
+</div>
+
+
+
+
 
   <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
 
-  <div ng-view></div>
 
-  <div>Angular seed app: v<span app-version></span></div>
 
   <!-- In production use:
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
@@ -34,8 +59,10 @@
   <script src="bower_components/angular/angular.js"></script>
   <script src="bower_components/angular-route/angular-route.js"></script>
   <script src="app.js"></script>
-  <script src="view1/view1.js"></script>
-  <script src="view2/view2.js"></script>
+  <script src="view_home/home.js"></script>
+  <script src="view_about/about.js"></script>
+  <script src="view_services/services.js"></script>
+  <script src="view_contact/contact.js"></script>
   <script src="components/version/version.js"></script>
   <script src="components/version/version-directive.js"></script>
   <script src="components/version/interpolate-filter.js"></script>
