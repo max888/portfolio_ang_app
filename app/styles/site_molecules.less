@@ -2,13 +2,13 @@
 
 /* side menu and page wrapper */
 #wrapper {
-  padding-left: 250px;
+  /* padding-left: 250px; */
   transition: all 0.4s ease 0s;
 }
 
 #sidebar-wrapper {
-  margin-left: -250px;
-  left: 250px;
+  margin-left: -213px;
+  /* left: 250px; */
   width: 250px;
   background: @white;
   position: fixed;
@@ -33,6 +33,19 @@
         .black;
       }
     }
+  }
+  &:hover {
+    margin-left: -0px;
+  }
+  .menu-slide {
+    position: absolute;
+    right: -2px;
+    top: 290px;
+    background-color: white;
+    -ms-transform: rotate(7deg);
+    -webkit-transform: rotate(7deg);
+    transform: rotate(270deg);
+    cursor: pointer;
   }
 }
 
@@ -80,8 +93,16 @@
 
 .ng-enter {
   -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 11.1 */
-    -moz-animation: fadein 1s; /* Firefox < 16 */
+    -moz-animation: fadein 1s;/* Firefox < 16 */
      -ms-animation: fadein 1s; /* Internet Explorer */
       -o-animation: fadein 1s; /* Opera < 11.1 */
          animation: fadein 1s;
+}
+
+.ng-leave {
+  -webkit-animation: fadeout 1s;/* Safari, Chrome and Opera > 11.1 */
+    -moz-animation: fadeout 1s; /* Firefox < 16 */
+     -ms-animation: fadeout 1s;/*  Internet Explorer */
+      -o-animation: fadeout 1s; /* Opera < 11.1 */
+         animation: fadeout 1s;
 }
