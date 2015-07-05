@@ -7,7 +7,8 @@ angular.module('myApp', [
   'myApp.about',
   'myApp.services',
   'myApp.contact',
-  'myApp.version'
+  'myApp.version',
+  'ngAnimate'
 ]).
 config(['$routeProvider', function($routeProvider) {
   $routeProvider.otherwise({redirectTo: '/home'});
