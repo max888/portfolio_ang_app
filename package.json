@@ -45,9 +45,9 @@
     "express": "~4.7.2"
   },
   "scripts": {
+    "start": "node app",
     "postinstall": "bower install",
-    "prestart": "npm install",
-    "start": "http-server -a localhost -p 8000 -c-1",
+    "postinstall": "gulp default",
     "pretest": "npm install",
     "test": "karma start karma.conf.js",
     "test-single-run": "karma start karma.conf.js  --single-run",
