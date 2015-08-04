@@ -19,5 +19,4 @@ myApp.controller('DemoCtrl', [function() {
     .addEventListener( "click", function() {
       this.classList.toggle( "active" );
     });
-
 }]);
