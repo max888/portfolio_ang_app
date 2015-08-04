@@ -15,5 +15,9 @@ config(['$routeProvider', function($routeProvider) {
 }]);
 
 myApp.controller('DemoCtrl', [function() {
-  
+  document.querySelector( "#nav-toggle" )
+    .addEventListener( "click", function() {
+      this.classList.toggle( "active" );
+    });
+
 }]);

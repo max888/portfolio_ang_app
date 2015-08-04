@@ -5,6 +5,7 @@
  */
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 @import url(http://fonts.googleapis.com/css?family=Droid+Sans:400,700);
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -6469,19 +6470,19 @@ button.close {
   background-color: #d3d3d3;
 }
 .hFont {
-  font-family: 'Droid Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 .pFont {
-  font-family: 'Droid Sans', sans-serif;
+  font-family: 'Courier', sans-serif;
 }
 .monoFont {
-  font-family: 'Droid Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 pre,
 code,
 samp,
 var {
-  font-family: 'Droid Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 var {
   font-weight: bold;
@@ -6492,7 +6493,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Droid Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: bold;
 }
 h1 {
@@ -6528,7 +6529,7 @@ h6 {
 html,
 body,
 p {
-  font-family: 'Droid Sans', sans-serif;
+  font-family: 'Courier', sans-serif;
   font-size: 14px;
   line-height: 20px;
 }
@@ -6766,6 +6767,7 @@ table tbody tr:nth-child(even) {
   transition: all 0.4s ease 0s;
 }
 #sidebar-wrapper {
+  padding-top: 10%;
   margin-left: -213px;
   /* left: 250px; */
   width: 250px;
@@ -6870,6 +6872,15 @@ table tbody tr:nth-child(even) {
 .top-nav #nav-toggle.active span:after {
   transform: rotate(-45deg);
 }
+.top-nav .header-logo .fa-bolt:first-child {
+  margin-right: 0px;
+}
+.top-nav .header-logo .fa-bolt:last-child {
+  margin-left: 10px;
+}
+.top-nav .header-logo:hover .fa {
+  color: #a8a8a8;
+}
 .rendered-content {
   padding-right: 40px;
   overflow: hidden;
@@ -6930,30 +6941,32 @@ table tbody tr:nth-child(even) {
 }
 /* main home page blocks */
 .home {
-  background-image: url('../img/portplace33.jpeg');
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  /*   background-image: url('../img/portplace33.jpeg');
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center; */
+  background-color: #FD5F65;
 }
 .home h1 {
   margin-top: 50px;
+  color: black;
 }
 .about {
-  background-color: lightblue;
+  background-color: #4bb5ea;
 }
 .contact {
-  background-color: lightcoral;
+  background-color: #FD5F65;
 }
 .services {
-  background-color: lightyellow;
+  background-color: #A856EF;
 }
 .services h2 {
   margin: 10px 40px;
 }
-.foo {
+.main-content-wrap {
   position: absolute;
   width: 100%;
   padding: 0px 40px;
