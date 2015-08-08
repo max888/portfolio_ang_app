@@ -26,8 +26,7 @@ gulp.task('heroku', function() {
   gulp.src('app')
     .pipe(webserver({
       livereload: false,
-      host: '0.0.0.0',
-      port: process.env.PORT,
+      host: '',
       directoryListing: {
         enable:true,
         path: 'index.html'
