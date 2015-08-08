@@ -17,17 +17,16 @@ gulp.task('less', function() {
 
 gulp.task('watch', function() {
     gulp.watch('app/styles/*.less', ['less']);
-})
+});
 
-var serve = require('gulp-serve');
-
-gulp.task('serve', serve('public'));
-gulp.task('serve-build', serve(['public', 'build']));
-gulp.task('serve-prod', serve({
-  root: [__dirname],
-  port: 80,
-  middleware: function(req, res) {
-  }
-}));
+gulp.task('heroku', function () {
+  return gulp.src(config.base)
+    .pipe(plugins.webserver({
+        host: '0.0.0.0',
+        port: process.env.PORT,
+        livereload: false,
+        open: false
+    }));
+});
 
 gulp.task('default', ['less', 'webserver', 'watch']);
