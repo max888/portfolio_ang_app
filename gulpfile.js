@@ -23,9 +23,7 @@ gulp.task('heroku', function () {
   return gulp.src(config.base)
     .pipe(plugins.webserver({
         host: '0.0.0.0',
-        port: process.env.PORT,
-        livereload: false,
-        open: false
+        livereload: false
     }));
 });
 
