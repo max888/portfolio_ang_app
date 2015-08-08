@@ -1,6 +1,6 @@
 {
   "name": "max-portfolio",
-  "private": true,
+  "private": false,
   "version": "0.0.1",
   "main": "app/app.js",
   "description": "A starter project for AngularJS",
@@ -47,7 +47,7 @@
   },
   "scripts": {
     "start": "node app",
-    "postinstall": "gulp serveprod",
+    "postinstall": "gulp heroku",
     "pretest": "npm install",
     "test": "karma start karma.conf.js",
     "test-single-run": "karma start karma.conf.js  --single-run",
