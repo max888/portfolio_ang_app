@@ -2,10 +2,24 @@ var gulp = require('gulp'),
   connect = require('gulp-connect'),
   less = require('gulp-less');
 
+// gulp.task('webserver', function() {
+//   connect.server({
+//     livereload: true
+//   });
+// });
+
+var webserver = require('gulp-webserver');
+
 gulp.task('webserver', function() {
-  connect.server({
-    livereload: true
-  });
+  gulp.src('app')
+    .pipe(webserver({
+      livereload: true,
+      directoryListing: {
+        enable:true,
+        path: 'app'
+      },
+      open: true
+    }));
 });
 
 gulp.task('less', function() {
@@ -23,6 +37,7 @@ gulp.task('heroku', function () {
   return gulp.src(config.base)
     .pipe(plugins.webserver({
         host: '0.0.0.0',
+        port: process.env.PORT,
         livereload: false
     }));
 });
