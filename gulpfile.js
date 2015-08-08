@@ -38,7 +38,8 @@ gulp.task('heroku', function() {
 gulp.task('serveprod', function() {
   connect.server({
     root: 'app',
-    port: process.env.PORT || 5000, // localhost:5000
+    host: 'infinite-lowlands-6023.herokuapp.com',
+    port: process.env.PORT,
     livereload: false
   });
 });
