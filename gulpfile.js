@@ -39,7 +39,7 @@ gulp.task('heroku', function() {
 gulp.task('serveprod', function() {
   connect.server({
     root: 'app',
-    host: 'infinite-lowlands-6023.herokuapp.com',
+    host: '',
     port: process.env.PORT,
     livereload: false,
     open: false
