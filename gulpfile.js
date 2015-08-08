@@ -22,7 +22,7 @@ gulp.task('webserver', function() {
     }));
 });
 
-gulp.task('webserver', function() {
+gulp.task('heroku', function() {
   gulp.src('app')
     .pipe(webserver({
       livereload: false,
@@ -31,7 +31,7 @@ gulp.task('webserver', function() {
         host: '0.0.0.0',
         path: 'index.html'
       },
-      open: true
+      open: false
     }));
 });
 
