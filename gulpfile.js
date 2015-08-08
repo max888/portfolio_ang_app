@@ -41,7 +41,8 @@ gulp.task('serveprod', function() {
     root: 'app',
     host: '',
     port: process.env.PORT,
-    livereload: false
+    livereload: false,
+    open: false
   });
 });
 
