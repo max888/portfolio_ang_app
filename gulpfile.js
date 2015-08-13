@@ -39,7 +39,7 @@ gulp.task('heroku', function() {
 gulp.task('serveprod', function() {
   connect.server({
     root: 'app',
-    host: '0.0.0.0',
+    host: process.env.HOST || '0.0.0.0';,
     port: process.env.PORT,
     livereload: false,
     open: false
