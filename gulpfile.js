@@ -40,7 +40,7 @@ gulp.task('serveprod', function() {
   connect.server({
     root: 'app',
     host: '0.0.0.0',
-    port: process.env.PORT,
+     port: process.env.PORT || 8080, // localhost:8080
     livereload: false,
     open: false
   });
