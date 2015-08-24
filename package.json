@@ -46,7 +46,7 @@
 
   },
   "scripts": {
-    "start": "node app",
+    "start": "gulp serveprod",
     "postinstall": "",
     "pretest": "npm install",
     "test": "karma start karma.conf.js",
