@@ -21,13 +21,15 @@
   <!--top header inc logo -->
   <div class="container-fluid">
     <div class="row top-nav" ng-controller="DemoCtrl">
-    <a href="#/home" ><div class="col-sm-2 "></a>
-        <a href="#/home" class="header-logo" ><i class="fa fa-bolt fa-2x"></i><i class="fa fa-bolt fa-2x"></i></a>
-
-
+      <div class="col-xs-6 pull-left hidden-md hidden-lg hidden-sm">
+        <div class="burger-menu">
+          <div class="burger"></div>
+        </div>
       </div>
-      <div class="col-sm-3 col-sm-offset-7">
-
+      <a href="#/home" ><div class="col-xs-6 col-sm-3 "></a>
+      <a href="#/home" class="header-logo" ><i class="fa fa-bolt fa-2x"></i><i class="fa fa-bolt fa-2x"></i></a>
+      </div>
+      <div class="col-sm-3 col-sm-offset-6 hidden-xs">
         <a  href="mailto:maxnorton.nz@gmail.com?Subject=Hey%20Max!" target="_blank"><i class="fa fa-envelope-o fa-2x pull-right"></i></a>
         <a href="https://twitter.com/maxnorton_" target="_blank"><i class="fa fa-twitter fa-2x pull-right"></i></a>
         <a id="nav-toggle" href="" class="hidden"><span></span></a>
@@ -51,18 +53,7 @@
       <div ng-view class="main-content-wrap">
       </div>
     </div>
-
-</div>
-
-
-
-
-
-  <!--[if lt IE 7]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-  <![endif]-->
-
-
+  </div>
 
   <!-- In production use:
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>

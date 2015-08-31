@@ -16,7 +16,14 @@ config(['$routeProvider', function($routeProvider) {
 
 myApp.controller('DemoCtrl', [function() {
   document.querySelector( "#nav-toggle" )
-    .addEventListener( "click", function() {
-      this.classList.toggle( "active" );
-    });
+  .addEventListener( "click", function() {
+    this.classList.toggle( "active" );
+  });
+  document.querySelector( ".burger-menu" ).addEventListener( "click", function() {
+    this.classList.toggle( "menu-on" );
+    document.querySelector("#sidebar-wrapper").classList.toggle( "open" );
+  });
+  document.querySelector( ".rendered-content" ).addEventListener( "click", function() {
+    document.querySelector("#sidebar-wrapper").classList.toggle( "open" );
+  });
 }]);

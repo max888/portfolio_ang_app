@@ -1,4 +1,4 @@
-// out: ../css/main.css, compress: true
+// main: ../styles/app.less
 
 /* main home page blocks */
 .home {
@@ -35,5 +35,10 @@ background-color: #FD5F65;
 .main-content-wrap {
   position: absolute;
   width: 100%;
-  padding: 0px 40px;
+}
+
+@media (min-width: 768px) {
+  .main-content-wrap {
+    padding: 0px 40px;
+  }
 }
