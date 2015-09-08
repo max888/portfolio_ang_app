@@ -14,16 +14,17 @@ config(['$routeProvider', function($routeProvider) {
   $routeProvider.otherwise({redirectTo: '/home'});
 }]);
 
-myApp.controller('DemoCtrl', [function() {
-  document.querySelector( "#nav-toggle" )
-  .addEventListener( "click", function() {
-    this.classList.toggle( "active" );
-  });
-  document.querySelector( ".burger-menu" ).addEventListener( "click", function() {
-    this.classList.toggle( "menu-on" );
-    document.querySelector("#sidebar-wrapper").classList.toggle( "open" );
-  });
-  document.querySelector( ".rendered-content" ).addEventListener( "click", function() {
-    document.querySelector("#sidebar-wrapper").classList.toggle( "open" );
-  });
-}]);
+myApp.controller('globalCtrl', function($scope) {
+  $scope.class = "normal-burger";
+  $scope.changeBurgerStatus = function(){
+    if ($scope.class === "normal-burger") {
+      $scope.class = "menu-on";
+      console.log('menu on now');
+      angular.element(document.querySelector('#sidebar-wrapper')).addClass( "open" );
+    }
+    else {
+      $scope.class = "normal-burger";
+      angular.element(document.querySelector('#sidebar-wrapper')).removeClass( "open" );
+    }
+  };
+});

@@ -116,7 +116,7 @@
 }
 
 .rendered-content {
-  padding-right: 40px;
+  /* padding-right: 40px; */
   overflow: hidden;
 }
 
@@ -155,11 +155,12 @@ body {-webkit-font-smoothing: antialiased;}
   position: relative;
   width: 50px;
   height: 50px;
+  top: 8px;
   cursor: pointer;
 }
 .burger {
   position: absolute;
-  background: rgba(111,111,111,1);
+  background: @black;
   width: 100%;
   height: 7px;
   top: 50%;
@@ -169,7 +170,7 @@ body {-webkit-font-smoothing: antialiased;}
 }
 .burger::before {
   position: absolute;
-  background: rgba(111,111,111,1);
+  background: @black;
   width: 50px;
   height: 7px;
   top: 15px;
@@ -178,7 +179,7 @@ body {-webkit-font-smoothing: antialiased;}
 }
 .burger::after {
   position: absolute;
-  background: rgba(111,111,111,1);
+  background: @black;
   width: 50px;
   height: 7px;
   bottom: 15px;
