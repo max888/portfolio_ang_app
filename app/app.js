@@ -14,12 +14,11 @@ config(['$routeProvider', function($routeProvider) {
   $routeProvider.otherwise({redirectTo: '/home'});
 }]);
 
-myApp.controller('globalCtrl', function($scope) {
+myApp.controller('menuCtrl', function($scope) {
   $scope.class = "normal-burger";
   $scope.changeBurgerStatus = function(){
     if ($scope.class === "normal-burger") {
       $scope.class = "menu-on";
-      console.log('menu on now');
       angular.element(document.querySelector('#sidebar-wrapper')).addClass( "open" );
     }
     else {
@@ -27,4 +26,11 @@ myApp.controller('globalCtrl', function($scope) {
       angular.element(document.querySelector('#sidebar-wrapper')).removeClass( "open" );
     }
   };
-});
+})
+
+// myApp.controller('slideCtrl', function($scope) {
+//   $scope.closeAfterClick = function() {
+//     angular.element(document.querySelector('#sidebar-wrapper')).removeClass( "open" );
+//       angular.element(document.querySelector('#sidebar-wrapper')).addClass( "close" );
+//   };
+// });
