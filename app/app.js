@@ -26,11 +26,4 @@ myApp.controller('menuCtrl', function($scope) {
       angular.element(document.querySelector('#sidebar-wrapper')).removeClass( "open" );
     }
   };
-})
-
-// myApp.controller('slideCtrl', function($scope) {
-//   $scope.closeAfterClick = function() {
-//     angular.element(document.querySelector('#sidebar-wrapper')).removeClass( "open" );
-//       angular.element(document.querySelector('#sidebar-wrapper')).addClass( "close" );
-//   };
-// });
+});
