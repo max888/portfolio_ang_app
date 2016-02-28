@@ -6,6 +6,7 @@ var myApp = angular.module('myApp', [
   'myApp.home',
   'myApp.about',
   'myApp.services',
+  'myApp.work',
   'myApp.contact',
   'myApp.version',
   'ngAnimate'
